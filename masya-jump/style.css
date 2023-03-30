@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+body {
+  background: burlywood;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Passion One';
+  font-size: larger;
+}
+
+#game-canvas {
+  background-size: cover;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.end-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 275px;
+  transform: translate(-50%, -50%);
+  background-color: burlywood;
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  display: none;
+  transition: 0.2s ease-in-out;
+}
+
+.end-score {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Passion One';
+  font-size: large;
+  color: burlywood;
+  background-color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: gray;
+  transform:scale(1.1);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.screen-score {
+  position: absolute;
+  height: 60%;
+  font-size: 30px;
+}
+
+@keyframes spin2 { 
+  0% { opacity : 0; }
+  100% { opacity : 1; } 
+}
